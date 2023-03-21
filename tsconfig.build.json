@@ -1,0 +1,39 @@
+{
+    "ts-node": {
+      "transpileOnly": true
+    },
+    "compilerOptions": {
+      "baseUrl": ".",
+      "esModuleInterop": true,
+      "target": "es6",
+      "lib": ["es2019"],
+      "moduleResolution": "node",
+      "resolveJsonModule": true,
+      "emitDecoratorMetadata": true,
+      "experimentalDecorators": true,
+      "module": "commonjs",
+      "removeComments": true,
+      "sourceMap": true,
+      "outDir": "build",
+      "paths": {
+        "@/db/*": ["./src/db/*"],
+        "@/openapi": ["./src/openapi"]
+      }
+    },
+    "include": [
+      "lib/**/*.d.ts",
+      "lib/**/*.ts",
+      "src/**/*.ts",
+      "src/**/*.d.ts",
+      "src/**/*.spec.ts",
+      "bin/prod/**/*.ts"
+    ],
+    "exclude": [
+      "lib/**/*.spec.ts",
+      "lib/**/*.test.ts",
+      "src/**/*.spec.ts",
+      "src/**/*.test.ts",
+      "src/spec",
+    ]
+  }
+  

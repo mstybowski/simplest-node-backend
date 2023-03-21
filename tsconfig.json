@@ -1,0 +1,40 @@
+{
+    "ts-node": {
+      "transpileOnly": true
+    },
+    "compilerOptions": {
+      "baseUrl": ".",
+      "emitDecoratorMetadata": true,
+      "esModuleInterop": true,
+      "experimentalDecorators": true,
+      "resolveJsonModule": true,
+      "importHelpers": true,
+      "allowJs": true,
+      "module": "commonjs",
+      "removeComments": true,
+      "sourceMap": true,
+      "strict": true,
+      "target": "es6",
+      "lib": ["es2019"],
+      "outDir": "build",
+      "moduleResolution": "node",
+      "types": ["mocha", "node"],
+      "typeRoots": ["node_modules/@types", "./src/types"],
+      "strictPropertyInitialization": false,
+      "noUncheckedIndexedAccess": true,
+      "paths": {
+        "@/db/*": ["./src/db/*"],
+        "@/spec/*": ["./src/spec/*"],
+        "@/openapi": ["./src/openapi"]
+      }
+    },
+    "include": [
+      "lib/**/*.d.ts",
+      "lib/**/*.ts",
+      "src/**/*.ts",
+      "src/**/*.d.ts",
+      "src/**/*.spec.ts",
+      "bin/**/*.ts" 
+    ]
+  }
+  

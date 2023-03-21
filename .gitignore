@@ -1,0 +1,9 @@
+.env
+dist
+node_modules
+.vscode
+.DS_Store
+.idea
+build/
+.pubsub-data
+credentials
