@@ -18,8 +18,7 @@
         "test": "npm run test:unit && npm run test:integration",
         "test:openapi": "./bin/test-env.sh mocha --config ./src/spec/.mocharc.openapi.json",
         "test:integration": "./bin/test-env.sh mocha --config ./src/spec/.mocharc.spec.json",
-        "test:unit": "./bin/test-env.sh mocha --config ./src/spec/.mocharc.test.json",
-        "preinstall": "./bin/preinstall.sh"
+        "test:unit": "./bin/test-env.sh mocha --config ./src/spec/.mocharc.test.json"
     },
     "dependencies": {
         "@bull-board/fastify": "^3.10.2",

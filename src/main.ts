@@ -2,7 +2,7 @@ import {setupApp} from './app'
 
 main();
 
-const PORT = 6969;
+const PORT = 80;
 const HOST = "0.0.0.0";
 
 async function main() {

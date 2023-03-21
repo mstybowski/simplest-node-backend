@@ -6,7 +6,7 @@ async function setupApp() {
     const app = fastify();
   
     app.get("/", (req, res) =>{
-        res.send({ hello: 'world' })
+        res.send({ who: 'John Smith', what: "", howMuch: "2000000" })
     })
   
     return app;
